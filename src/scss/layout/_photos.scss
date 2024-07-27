@@ -1,15 +1,21 @@
 @use 'globals/variables' as *;
+@use 'globals/mixins' as *;
 
 .photos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: $orange;
     place-content: center;
     place-items: center;
     gap: 2rem;
 
+    @include grid(1, 2rem);
+
+    @include desktop{
+        @include grid(2, 1rem)
+    }
+
     &-container{
-        width: 712px;
+        max-width: 712px;
         height: 450px;
         overflow: hidden;
         object-fit: cover;

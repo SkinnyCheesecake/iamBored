@@ -1,0 +1,39 @@
+@use 'globals/variables' as *;
+@use 'globals/mixins' as *;
+
+.fcontainer{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 2rem;
+
+    @include grid(1, 2rem);
+
+    @include tablet{
+        @include grid(2, 2rem)
+    }
+
+    @include desktopXL{
+        @include grid(3, 2rem)
+    }
+
+    &-hero{
+        padding: 1rem;
+        border: 1px solid $black;
+
+    }
+
+}
+
+.fcontainer-photo{
+    max-width: 320px;
+    height: 320px;
+    background-color: $purple;
+    margin: 1rem 0;
+}
+
+.fcontainer-information p{
+    color: gray;
+    font-weight: 300;
+    margin-block: 1rem;
+}

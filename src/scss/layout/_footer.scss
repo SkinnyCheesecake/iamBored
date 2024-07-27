@@ -1,0 +1,11 @@
+@use 'globals/variables' as *;
+
+.footer{
+    display: flex;
+    font-size: 0.1rem;
+    background-color: $orange;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}

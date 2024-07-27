@@ -8,8 +8,13 @@
     place-content: center;
     text-align: center;
     color: $white;
+    line-height: 0.92;
     h1{
         font-size: 6rem;
         margin: 1rem;
+    }
+    h2{
+        font-weight: 400;
+        letter-spacing: -3px;
     }
 }
