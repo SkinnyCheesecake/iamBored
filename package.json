@@ -1,0 +1,36 @@
+{
+  "name": "lastscssproject",
+  "version": "1.0.0",
+  "description": "Last mini-sidequest with Scss",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "scss --watch src/scss:dist/css",
+    "render": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkinnyCheesecake/iamBored.git"
+  },
+  "keywords": [
+    "Scss",
+    "NPM",
+    "Gulp",
+    "JavaScript"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkinnyCheesecake/iamBored/issues"
+  },
+  "homepage": "https://github.com/SkinnyCheesecake/iamBored#readme",
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.8",
+    "sharp": "^0.33.4"
+  }
+}

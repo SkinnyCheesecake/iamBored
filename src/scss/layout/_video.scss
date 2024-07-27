@@ -1,0 +1,15 @@
+@use 'globals/variables' as *;
+
+.video{
+    height: 92.5vh;
+    background-color: $black;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: $white;
+    h1{
+        font-size: 6rem;
+        margin: 1rem;
+    }
+}

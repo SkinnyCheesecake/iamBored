@@ -1,0 +1,44 @@
+@use 'globals/variables' as *;
+
+.text{
+    margin-bottom: 2rem;
+}
+
+.hero{
+    display: grid;
+    place-content: center;
+    place-items: center;
+
+
+    &-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 2rem;
+        margin-block: 2rem;
+    }
+
+    &-color{
+        width: 100%;
+        height: 14rem;
+        background-color: $orange;
+    }
+
+    &-content{
+        height: 100%;
+        padding: 1rem 0;
+        display: grid;
+        place-content: center;
+    }
+
+    .button{
+        border: 1px solid gray;
+        padding: .8rem 2rem;
+        border-radius: 10px;
+        color: $black;
+        margin-top: 3rem;
+        width: 120px;
+        text-align: center;
+    }
+}
+
+

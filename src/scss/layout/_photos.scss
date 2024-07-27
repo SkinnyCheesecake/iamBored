@@ -1,0 +1,22 @@
+@use 'globals/variables' as *;
+
+.photos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $orange;
+    place-content: center;
+    place-items: center;
+    gap: 2rem;
+
+    &-container{
+        width: 712px;
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover;
+        background-color: $purple;
+        margin-block: 1.2rem;
+    }
+    &-container:nth-child(1){
+        background-color: $black;
+    }
+}
